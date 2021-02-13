@@ -5,7 +5,7 @@ function Bar (){
     return (
       <AppBar position="static">
         <Toolbar>
-          RedMobile InAppBrowser Sample
+          RedMobile React App Sample
         </Toolbar>
       </AppBar>  
     )
