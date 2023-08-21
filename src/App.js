@@ -7,40 +7,34 @@ import axios from 'axios';
 class App extends Component {
   state = {
     data: '',
-    endpoint: 'http://127.0.0.1:1880/api/photo'
+    endpoint: 'http://127.0.0.1:1880/api/photo',
   };
 
   handleClick = () => {
     axios
       .get(this.state.endpoint)
       .then((results) => {
-        this.setState({data :results.data});
-      },
-    )
-    .catch((error) => {
-      alert(error.message);
-    });
-  }
+        this.setState({ data: results.data });
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
 
   handleChangeEndPoint = (props) => {
     this.setState({
-      endpoint: props.target.value
+      endpoint: props.target.value,
     });
   };
 
   render() {
     return (
       <Container maxWidth="sm">
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
+        <Grid container direction="row" justify="center" alignItems="center">
           <TextField
             style={{
               margin: '10px 0px 0px 0px',
-              width: '100%'
+              width: '100%',
             }}
             id="endpoint"
             label="Endpoint"
@@ -49,22 +43,17 @@ class App extends Component {
             // inputProps= {{fullWidth: true}}
           />
           <Button
-            style={{margin: '20px 20px 20px 20px '}}
-            onClick= {() => this.handleClick()}
+            style={{ margin: '20px 20px 20px 20px ' }}
+            onClick={() => this.handleClick()}
             variant="contained"
           >
-              Take a Picture
+            Take a Picture
           </Button>
-          <CardMedia 
-            component='img'
-            src={this.state.data} 
-          />
+          <CardMedia component="img" src={this.state.data} />
         </Grid>
       </Container>
     );
   }
-
-
 }
 
 export default App;

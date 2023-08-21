@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```zsh
 nodenv install
+pre-commit install
 npm i -g yarn
 ```
 
