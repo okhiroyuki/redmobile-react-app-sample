@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "gh-pages": "6.1.1",
-    "prettier": "3.2.3"
+    "prettier": "3.2.4"
   },
   "homepage": "https://okhiroyuki.github.io/redmobile-react-app-sample/"
 }
