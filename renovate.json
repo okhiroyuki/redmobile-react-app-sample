@@ -35,12 +35,6 @@
       "groupName": "React v18 - these dependencies support v18 but break support for v17",
       "packageNames": ["@material-ui/core", "@material-ui/system"],
       "enabled": false
-    },
-    {
-      "fileMatch": ["\\.pre-commit-config\\.yaml"],
-      "matchStrings": ["(?<depName>[^'\" ]+)@(?<currentValue>[^'\" ,\\s]+)"],
-      "datasourceTemplate": "npm",
-      "versioningTemplate": "npm"
     }
   ]
 }
