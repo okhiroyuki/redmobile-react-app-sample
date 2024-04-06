@@ -1,13 +1,13 @@
-import { Component } from 'react';
-import { CardMedia, Grid, Button } from '@material-ui/core';
-import TextField from '@material-ui/core/TextField';
-import Container from '@material-ui/core/Container';
-import axios from 'axios';
+import { Button, CardMedia, Grid } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
+import TextField from "@material-ui/core/TextField";
+import axios from "axios";
+import { Component } from "react";
 
 class App extends Component {
   state = {
-    data: '',
-    endpoint: 'http://127.0.0.1:1880/api/photo',
+    data: "",
+    endpoint: "http://127.0.0.1:1880/api/photo",
   };
 
   handleClick = () => {
@@ -33,8 +33,8 @@ class App extends Component {
         <Grid container direction="row" justify="center" alignItems="center">
           <TextField
             style={{
-              margin: '10px 0px 0px 0px',
-              width: '100%',
+              margin: "10px 0px 0px 0px",
+              width: "100%",
             }}
             id="endpoint"
             label="Endpoint"
@@ -43,7 +43,7 @@ class App extends Component {
             // inputProps= {{fullWidth: true}}
           />
           <Button
-            style={{ margin: '20px 20px 20px 20px ' }}
+            style={{ margin: "20px 20px 20px 20px " }}
             onClick={() => this.handleClick()}
             variant="contained"
           >
