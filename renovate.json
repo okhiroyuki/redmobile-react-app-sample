@@ -37,12 +37,8 @@
       "enabled": false
     },
     {
-      "fileMatch": [
-        "\\.pre-commit-config\\.yaml"
-      ],
-      "matchStrings": [
-        "(?<depName>[^'\" ]+)@(?<currentValue>[^'\" ,\\s]+)"
-      ],
+      "fileMatch": ["\\.pre-commit-config\\.yaml"],
+      "matchStrings": ["(?<depName>[^'\" ]+)@(?<currentValue>[^'\" ,\\s]+)"],
       "datasourceTemplate": "npm",
       "versioningTemplate": "npm"
     }
