@@ -1983,10 +1983,10 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
-"@testing-library/jest-dom@6.4.3":
-  version "6.4.3"
-  resolved "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-6.4.3.tgz"
-  integrity sha512-d1NUtNEN0hSUB/XWdF1GgdlD5S2tS0huQb2tkFL2usXRatR/EiHS6AhLtDcCb/iD9CS7kRmbAHt2O5JadkKyuA==
+"@testing-library/jest-dom@6.4.5":
+  version "6.4.5"
+  resolved "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-6.4.5.tgz"
+  integrity sha512-AguB9yvTXmCnySBP1lWjfNNUwpbElsaQ567lt2VdGqAdHtpieLgjmcVyv1q7PMIvLbgpDdkWV5Ydv3FEejyp2A==
   dependencies:
     "@adobe/css-tools" "^4.3.2"
     "@babel/runtime" "^7.9.2"
