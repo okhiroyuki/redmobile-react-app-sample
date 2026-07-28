@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.6",
-    "npm-run-all2": "9.0.2"
+    "npm-run-all2": "9.0.3"
   },
   "homepage": "https://okhiroyuki.github.io/redmobile-react-app-sample/"
 }
